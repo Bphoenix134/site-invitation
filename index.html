@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Свадебное приглашение">
+  <title>Свадебное приглашение | Кристина и Никита</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__content fade-in">
+      <p class="hero__kicker">Мы женимся</p>
+      <h1 class="hero__names">Кристина &amp; Никита</h1>
+      <p class="hero__date">Суббота, 12 сентября 2026</p>
+      <p class="hero__tagline">Приглашаем вас разделить с нами день любви, радости, ужина, танцев и теплых воспоминаний.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="countdown-title">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="section__eyebrow">Считаем каждый миг</p>
+          <h2 class="section__title" id="countdown-title">До нашего «Да»</h2>
+        </div>
+
+        <div class="countdown-grid fade-in" aria-live="polite">
+          <div class="countdown-card">
+            <div>
+              <strong id="days">00</strong>
+              <span>Дней</span>
+            </div>
+          </div>
+          <div class="countdown-card">
+            <div>
+              <strong id="hours">00</strong>
+              <span>Часов</span>
+            </div>
+          </div>
+          <div class="countdown-card">
+            <div>
+              <strong id="minutes">00</strong>
+              <span>Минут</span>
+            </div>
+          </div>
+          <div class="countdown-card">
+            <div>
+              <strong id="seconds">00</strong>
+              <span>Секунд</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="section__eyebrow">Этот день</p>
+          <h2 class="section__title" id="timeline-title">Расписание праздника</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item fade-in">
+            <div class="timeline-dot"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+            <div class="timeline-content">
+              <p class="timeline-time">10:50</p>
+              <h3>Сбор гостей</h3>
+              <p>Встречаемся у загса — место, где начнётся наша новая история.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-dot"><i class="fa-solid fa-ring" aria-hidden="true"></i></div>
+            <div class="timeline-content">
+              <p class="timeline-time">11:20</p>
+              <h3>Церемония</h3>
+              <p>Клятвы, улыбки, счастливые слёзы и официальное «да». Самый трогательный момент.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-dot"><i class="fa-solid fa-camera" aria-hidden="true"></i></div>
+            <div class="timeline-content">
+              <p class="timeline-time">12:00</p>
+              <h3>Фотосессия</h3>
+              <p>Сохраним эту магию в кадрах с теми, кто нам дороже всего.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-dot"><i class="fa-solid fa-car" aria-hidden="true"></i></div>
+            <div class="timeline-content">
+              <p class="timeline-time">13:30</p>
+              <h3>Дорога к празднику</h3>
+              <p>Отправляемся в уютное место для продолжения торжества.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-dot"><i class="fa-solid fa-house" aria-hidden="true"></i></div>
+            <div class="timeline-content">
+              <p class="timeline-time">14:30</p>
+              <h3>Размещение в доме</h3>
+              <p>Устраивайтесь поудобнее! Если захотите попариться или искупаться — купальник, плавки и тапочки пригодятся.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-dot"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i></div>
+            <div class="timeline-content">
+              <p class="timeline-time">16:00</p>
+              <h3>Основная программи</h3>
+              <p>Конкурсы, танцы, вкусная еда — всё, чтобы наш день запомнился надолго.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-dot"><i class="fa-solid fa-spa" aria-hidden="true"></i></div>
+            <div class="timeline-content">
+              <p class="timeline-time">18:00</p>
+              <h3>Время для себя</h3>
+              <p>Баня, бассейн, просто отдых в кругу близких. Чиллим и наслаждаемся моментом.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ДРЕСС-КОД И ПОДАРКИ
+      Цвета кружков дресс-кода меняются в style.css:
+      .dress-code-color--pink, .dress-code-color--blue, .dress-code-color--green.
+      Ссылку на wishlist замените в href ниже.
+    -->
+    <section class="section" aria-labelledby="details-title">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="section__eyebrow">Важные детали</p>
+          <h2 class="section__title" id="details-title">Дресс-код и подарки</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-panel fade-in">
+            <div class="info-panel__icon"><i class="fa-solid fa-shirt" aria-hidden="true"></i></div>
+            <h3>Дресс-код</h3>
+            <p>Будем рады, если вы поддержите мягкую романтичную палитру нашего праздника.</p>
+
+            <div class="dress-code-colors" aria-label="Цвета дресс-кода">
+              <div class="dress-code-choice">
+                <span class="dress-code-color dress-code-color--cream" aria-hidden="true"></span>
+                <span>Кремовый</span>
+              </div>
+              <div class="dress-code-choice">
+                <span class="dress-code-color dress-code-color--blue" aria-hidden="true"></span>
+                <span>Мягкий голубой</span>
+              </div>
+              <div class="dress-code-choice">
+                <span class="dress-code-color dress-code-color--tan" aria-hidden="true"></span>
+                <span>Песочный</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="info-panel fade-in">
+            <div class="info-panel__icon"><i class="fa-solid fa-gift" aria-hidden="true"></i></div>
+            <h3>Подарки</h3>
+            <p>Самым ценным подарком для нас станут деньги — они станут отличной основой для нашего семейного бюджета. Но мы знаем, что некоторым гостям хочется вручить что-то осязаемое, поэтому мы сделали небольшой вишлист с милыми штучками.</p>
+
+            <a class="wishlist-link" href="https://followish.io/mywishlist/tyeeryuwil2mcn" target="_blank" rel="noopener">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              Открыть список желаний
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="container">
+        <div class="rsvp-wrap">
+          <aside class="rsvp-copy fade-in">
+            <div>
+              <p class="section__eyebrow">Пожалуйста, ответьте</p>
+              <h2 id="rsvp-title">Вы будете с нами?</h2>
+              <p>Отправьте, пожалуйста, ответ, выбор напитка, пожелания по питанию и несколько любимых песен для нашего плейлиста.</p>
+            </div>
+          </aside>
+
+          <form
+            class="rsvp-form fade-in"
+            id="rsvp-form"
+            action="https://forminit.com/f/mugmwzvq9fe"
+            method="POST"
+            novalidate>
+            <div class="form-field">
+            <label for="full-name">Полное имя <span class="required">*</span></label>
+            <input type="text" id="full-name" name="fi-sender-fullName" placeholder="Ваше полное имя" autocomplete="name" required>
+            </div>
+            <fieldset class="form-field radio-group">
+              <legend class="radio-group__label">Вы сможете прийти? <span class="required">*</span></legend>
+              <div class="radio-options">
+                <label class="radio-card">
+                  <input type="radio" name="fi-radio-attendance" value="Да" required>
+                  <span>Да, с радостью</span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="fi-radio-attendance" value="Нет" required>
+                  <span>Нет, но с любовью</span>
+                </label>
+              </div>
+            </fieldset>
+            <div class="form-field">
+              <label for="drink">Что вы хотели бы пить? <span class="required">*</span></label>
+              <textarea id="dietary" name="fi-text-drink" placeholder="Напишите как алкогольные напитки, так и безалкогольные."></textarea>
+            </div>
+            <div class="form-field">
+              <label for="dietary">Пищевые ограничения / аллергии</label>
+              <textarea id="dietary" name="fi-text-dietary" placeholder="Вегетарианство, без глютена, аллергия на орехи, нет ограничений и т.д."></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="songs">Поделитесь 7-10 ссылками на любимые песни<span class="required">*</span></label>
+              <textarea id="songs" name="fi-text-songs" placeholder="Вставьте ссылки желательно на ЯндексМузыка." required></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="fact">Напишите интересный факт о себе, о котором никто не знает<span class="required">*</span></label>
+              <textarea id="fact" name="fi-text-fact" placeholder="Очень важно, чтобы этот факт был малоизвестный в кругу друзей или родных." required></textarea>
+            </div>
+
+            <button class="button" type="submit">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              Отправить ответ
+            </button>
+
+            <p class="form-note">Поля со звездочкой обязательны.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container fade-in">
+      <h2>Очень вас ждём!</h2>
+    </div>
+  </footer>
+
+  <!-- Основной файл JavaScript. -->
+  <script src="script.js"></script>
+</body>
+</html>
